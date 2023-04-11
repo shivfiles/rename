@@ -43,7 +43,7 @@ async def not_subscribed(_, client, message):
 @Client.on_message(filters.private & filters.create(not_subscribed))
 async def forces_sub(client, message):
     buttons = [[ InlineKeyboardButton(text="💴BUY PREMIUM💵", url=f"https://t.me/Filerenamefreebot") ]]
-    text = "Hey {mention}..😍\n You Need to Buy Premium On this Bot @Filerenamefreebot use Me...!"
+    text = "Hey..😍\n You Need to Buy Premium On this Bot @Filerenamefreebot use Me...!"
     try:
         user = await client.get_chat_member(client.force_channel, message.from_user.id)    
         if user.status == enums.ChatMemberStatus.BANNED:                                   
