@@ -43,11 +43,11 @@ async def not_subscribed(_, client, message):
 @Client.on_message(filters.private & filters.create(not_subscribed))
 async def forces_sub(client, message):
     buttons = [[ InlineKeyboardButton(text="💴BUY PREMIUM💵", url=f"https://t.me/Filerenamefreebot") ]]
-    text = "Hey..😍\n You Need to Buy Premium On this Bot @Filerenamefreebot use Me...!"
+    text = "Hey..😍.p You Need to Buy Premium On this Bot use Me...!"
     try:
         user = await client.get_chat_member(client.force_channel, message.from_user.id)    
         if user.status == enums.ChatMemberStatus.BANNED:                                   
-            return await client.send_message(message.from_user.id, text="𝚈𝙾𝚄𝚁 𝙰𝚁𝙴 𝙱𝙰𝙽𝙽𝙴𝙳 𝚃𝙾 𝚄𝚂𝙴 𝙼𝙴")  
+            return await client.send_message(message.from_user.id, text="Hey..😍. You Need to Buy Premium On this Bot @Filerenamefreebot use Me...!")  
     except UserNotParticipant:                       
         return await message.reply_text(text=text, reply_markup=InlineKeyboardMarkup(buttons))
     return await message.reply_text(text=text, reply_markup=InlineKeyboardMarkup(buttons))
