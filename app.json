@@ -1,7 +1,7 @@
 {
     "name": "Renamer Bot",
     "description": "Telegram File Renamer Bot ",
-    "logo": "https://graph.org/file/91ab4b346dddd0652958c.jpg",
+    "logo": "https://graph.org/file/7f5c4f9e989cd1e2ee84b.jpg",
     "keywords": ["Renamer Bot", "Mongo DB"],    
     "repository": "https://github.com/Ridzys96/Rename",
     "env": {
@@ -35,7 +35,7 @@
         },
         "DB_NAME":{ 
             "description":"Your Mongo DB Database Name ",
-            "value": "pyro-botz",
+            "value": "snowsbotz",
             "required": false
         },
         "START_PIC": {
